@@ -7,6 +7,7 @@
     --white-background-color: #ffffff;
     --secondary-white-color: #E7E9FC;
     --text-light-color: #F4F4FD;
+    --icon-gray-color: #8E8F99;
 
     /* FONT-FAMILY */           
     --primary-font-family: 'Roboto', sans-serif;
@@ -181,7 +182,27 @@ img {
     color: var(--white-background-color);
 }
 
-/* HEADER */
+/* SOCIAL */
+.social-item {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+
+    border-radius: 50%;
+    background-color: var(--primary-brand-color);
+}
+
+.social-item .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* ================== HEADER ================== */
 .header-container {
     display: flex;
 }
@@ -194,6 +215,10 @@ img {
 .menu {
     display: flex;
     gap: 40px;
+}
+
+.menu .item {
+    position: relative;
 }
 
 .menu-link {
@@ -212,6 +237,34 @@ img {
     color: var(--pressed-state-color);
 }
 
+.studio-link::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+
+    width: 48px;
+    height: 4px;
+    flex-shrink: 0;
+
+    background-color: var(--pressed-state-color);
+    border-radius: 2px;
+}
+
+.portfolio-link::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+
+    width: 66px;
+    height: 4px;
+    flex-shrink: 0;
+
+    background-color: var(--pressed-state-color);
+    border-radius: 2px;
+}
+
 .contacts {
     font-style: normal;
     align-items: center;
@@ -224,6 +277,8 @@ img {
 }
 
 .contacts-item {
+    display: block;
+    padding: 24px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-description-color);
@@ -234,12 +289,16 @@ img {
     color: var(--pressed-state-color);
 }
 
-/* ======== FOOTER ======== */
+/* ================== FOOTER ================== */
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
 
     background-color: var(--primary-blue-color);
+}
+
+.footer .container {
+    display: flex;
 }
 
 .footer .logo {
@@ -249,18 +308,45 @@ img {
 
 .footer-description {
     max-width: 264px;
+    margin-right: 120px;
     
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-light-color);
 }
 
-/* ======== STUDIO ======== */
+.footer-social-comon {
+    margin-bottom: 16px;
+
+    font-family: var(--primary-font-family);
+    color: var(--white-background-color);
+}
+
+.footer-cocials-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+/* ================== STUDIO ================== */
 /* STUDIO HERO */
 .studio-hero {
     padding-top: 188px;
     padding-bottom: 188px;
 
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)),
+        url("../images/people-office.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: var(--primary-blue-color);
 }
 
@@ -317,6 +403,25 @@ img {
     flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
+.about-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    margin-bottom: 8px;
+
+    border-radius: 4px;
+    background-color: var(--text-light-color);
+}
+
+.studio-about-icon {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
 /* STUDIO DOING */
 .studio-doing {
     padding-top: 60px;
@@ -354,7 +459,39 @@ img {
     padding: 32px 0;
 }
 
-/* ======== PORTFOLIO ======== */
+.studio-cocials-list {
+    display: flex;
+    gap: 24px;
+
+    padding: 8px 16px 0 16px;
+}
+
+.studio-social-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* CLIENTS */
+.studio-clients-list {
+    display: flex;
+    gap: 24px;
+}
+
+.studio-clients-item {
+    width: 168px;
+    height: 88px;
+
+    border-radius: 4px;
+    border: 1px solid var(--icon-gray-color);
+}
+
+.studio-client-icon {
+    width: 168px;
+    height: 88px;
+}
+
+/* ================== PORTFOLIO ================== */
 .portfolio-hero {
     padding-top: 96px;
     padding-bottom: 120px;
