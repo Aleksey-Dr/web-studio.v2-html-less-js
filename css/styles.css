@@ -5,6 +5,7 @@
     --primary-blue-color: #2E2F42;
     --text-description-color: #434455;
     --white-background-color: #ffffff;
+    --modal-background-color: #fcfcfc;
     --secondary-white-color: #E7E9FC;
     --text-light-color: #F4F4FD;
     --icon-gray-color: #8E8F99;
@@ -205,6 +206,70 @@ img {
     border-radius: 50%;
 }
 
+/* ================== MODAL WINDOW ================== */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  transition: opacity 250ms var(--timing-function),
+    visibility 250ms var(--timing-function);
+
+  background-color: rgba(46, 47, 66, 0.40);
+}
+
+.modal-backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 408px;
+  height: 584px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+
+  background-color: var(--modal-background-color);
+}
+
+.modal-button-close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border: 1px solid var(--secondary-white-color);
+  border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-function);
+}
+
+.icon-close {
+  transition: fill 250ms var(--timing-function);
+  width: 8px;
+  height: 8px;
+
+  fill: var(--primary-blue-color);
+}
+
 /* ================== HEADER ================== */
 .header-container {
     display: flex;
@@ -240,27 +305,13 @@ img {
     color: var(--pressed-state-color);
 }
 
-.studio-link::after {
+.current::after {
     content: "";
     position: absolute;
     bottom: -1px;
     left: -1px;
 
-    width: 48px;
-    height: 4px;
-    flex-shrink: 0;
-
-    background-color: var(--pressed-state-color);
-    border-radius: 2px;
-}
-
-.portfolio-link::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: -1px;
-
-    width: 66px;
+    width: 100%;
     height: 4px;
     flex-shrink: 0;
 
