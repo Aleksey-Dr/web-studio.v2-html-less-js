@@ -20,7 +20,7 @@
     /* FONT-WEIGHT */
     --medium-font-weight: 500;
 
-    /* TRANSSITION */
+    /* TIMING */
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -176,6 +176,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--primary-brand-color);
+
+    transition: background-color 250ms var(--timing-function);
 }
 
 .btn:hover,
@@ -184,6 +186,8 @@ img {
 
     background-color: var(--pressed-state-color);
     color: var(--white-background-color);
+
+    transition: background-color 250ms var(--timing-function);
 }
 
 /* SOCIAL */
@@ -263,11 +267,12 @@ img {
 }
 
 .icon-close {
-  transition: fill 250ms var(--timing-function);
   width: 8px;
   height: 8px;
 
   fill: var(--primary-blue-color);
+
+  transition: fill 250ms var(--timing-function);
 }
 
 /* ================== HEADER ================== */
@@ -298,11 +303,15 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-blue-color);
+
+    transition: color 250ms var(--timing-function);
 }
 
 .menu-link:hover,
 .menu-link:focus {
     color: var(--pressed-state-color);
+
+    transition: color 250ms var(--timing-function);
 }
 
 .current::after {
@@ -336,11 +345,15 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-description-color);
+
+    transition: color 250ms var(--timing-function);
 }
  
 .contacts-item:hover,
 .contacts-item:focus {
     color: var(--pressed-state-color);
+
+    transition: color 250ms var(--timing-function);
 }
 
 /* ================== FOOTER ================== */
@@ -435,11 +448,15 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--white-background-color);
+
+    transition: background-color 250ms var(--timing-function);
 }
 
 .studio-hero-btn:hover,
 .studio-hero-btn:focus {
     background-color: var(--pressed-state-color);
+
+    transition: background-color 250ms var(--timing-function);
 }
 
 /* STUDIO ABOUT */
@@ -566,12 +583,16 @@ img {
 
 .portfolio-card {
     flex-basis: calc((100% - 2 * 24px) / 3);
+
+    transition: box-shadow 250ms var(--timing-function);
 }
 
 .portfolio-card:hover {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
         0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+    transition: box-shadow 250ms var(--timing-function);
 }
 
 .portfolio-card-text {
@@ -601,6 +622,7 @@ img {
 
 .portfolio-box:hover .overlay,
 .portfolio-card:hover .overlay {
+    transition: transform 250ms var(--timing-function);
     transform: translateY(0);
 }
 
