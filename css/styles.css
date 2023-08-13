@@ -455,11 +455,6 @@ img {
   transition: fill 250ms var(--timing-function);
 }
 
-.icon-close:hover,
-.icon-close:focus {
-    fill: var(--white-background-color);
-}
-
 .modal-btn-close:hover .icon-close,
 .icon-close:focus .icon-close {
     fill: var(--white-background-color);
@@ -717,7 +712,8 @@ img {
 }
 
 .portfolio-box:hover .overlay,
-.portfolio-card:hover .overlay {
+.portfolio-card:hover .overlay,
+.portfolio-card-link:hover .overlay {
     transition: transform 250ms var(--timing-function);
     transform: translateY(0);
 }
