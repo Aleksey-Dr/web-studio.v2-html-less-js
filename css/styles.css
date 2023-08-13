@@ -436,8 +436,7 @@ img {
 
   cursor: pointer;
 
-  transition: border 250ms var(--timing-function),
-    background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
 }
 
 .modal-btn-close:hover,
@@ -459,6 +458,7 @@ img {
 .icon-close:focus .icon-close {
     fill: var(--white-background-color);
 }
+/* ============================================ */
 
 /* ================== STUDIO ================== */
 /* STUDIO HERO */
@@ -712,8 +712,9 @@ img {
 }
 
 .portfolio-box:hover .overlay,
+.portfolio-box:focus .overlay,
 .portfolio-card:hover .overlay,
-.portfolio-card-link:hover .overlay {
+.portfolio-card:focus .overlay {
     transition: transform 250ms var(--timing-function);
     transform: translateY(0);
 }
