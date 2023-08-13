@@ -9,6 +9,7 @@
     --secondary-white-color: #E7E9FC;
     --text-light-color: #F4F4FD;
     --icon-gray-color: #8E8F99;
+    --success-messages-color: #31D0AA;
 
     /* FONT-FAMILY */           
     --primary-font-family: 'Roboto', sans-serif;
@@ -178,6 +179,7 @@ img {
     color: var(--primary-brand-color);
 
     transition: background-color 250ms var(--timing-function),
+        border-color 250ms var(--timing-function),
         box-shadow 250ms var(--timing-function),
         color 250ms var(--timing-function);
 }
@@ -194,6 +196,7 @@ img {
     color: var(--white-background-color);
 
     transition: background-color 250ms var(--timing-function),
+        border-color 250ms var(--timing-function),
         box-shadow 250ms var(--timing-function),
         color 250ms var(--timing-function);
 }
@@ -264,12 +267,14 @@ img {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
   background-color: var(--modal-background-color);
+
+  transition: transform 250ms var(--timing-function);
 }
 
-.modal-button-close {
+.modal-btn-close {
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 24px;
+  right: 24px;
 
   display: flex;
   justify-content: center;
@@ -279,10 +284,22 @@ img {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  border: 1px solid var(--secondary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  background-color: var(--secondary-white-color);
 
-  transition: background-color 250ms var(--timing-function);
+  cursor: pointer;
+
+  transition: border 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+    border: none;
+    background-color: var(--pressed-state-color);
+
+    fill: var(--white-background-color);
 }
 
 .icon-close {
@@ -292,6 +309,11 @@ img {
   fill: var(--primary-blue-color);
 
   transition: fill 250ms var(--timing-function);
+}
+
+.modal-btn-close:hover .icon-close,
+.icon-close:focus .icon-close {
+    fill: var(--white-background-color);
 }
 
 /* ================== HEADER ================== */
@@ -422,15 +444,22 @@ img {
     color: var(--white-background-color);
 }
 
-.footer-cocials-list {
+.footer-socials-list {
     display: flex;
     gap: 16px;
+}
+
+.footer-social-link.link:hover,
+.footer-social-link.link:focus {
+    background-color: var(--success-messages-color);
 }
 
 .footer-social-icon {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+
+    fill: var(--text-light-color);
 }
 
 /* ================== STUDIO ================== */
