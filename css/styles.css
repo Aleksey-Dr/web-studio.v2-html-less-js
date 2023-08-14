@@ -151,6 +151,8 @@ img {
 }
 
 .studio-card-description {
+    margin-bottom: 8px;
+
     text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -319,6 +321,7 @@ img {
 
     transition: color 250ms var(--timing-function);
 }
+/* ================== /HEADER ================== */
 
 /* ================== FOOTER ================== */
 .footer {
@@ -457,7 +460,7 @@ img {
 .modal-btn-close:focus .icon-close {
     fill: var(--white-background-color);
 }
-/* ============================================ */
+/* ================== /MODAL WINDOW ================== */
 
 /* ================== STUDIO ================== */
 /* STUDIO HERO */
@@ -591,13 +594,11 @@ img {
     padding: 32px 0;
 }
 
-.studio-cocials-list {
+.studio-socials-list {
     display: flex;
     gap: 24px;
 
     justify-content: center;
-
-    padding: 8px 16px 0 16px;
 }
 
 .studio-social-icon {
@@ -640,11 +641,9 @@ img {
 }
 
 .studio-client-icon {
-    width: 168px;
-    height: 88px;
-
     fill: currentColor;
 }
+/* ================== /STUDIO ================== */
 
 /* ================== PORTFOLIO ================== */
 .portfolio-hero {
@@ -734,3 +733,4 @@ img {
     transition: transform 250ms var(--timing-function);
     transform: translateY(100%);
 }
+/* ================== /PORTFOLIO ================== */
