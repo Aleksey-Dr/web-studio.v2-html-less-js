@@ -1,0 +1,40 @@
+/* ================== DESCRIPTION ================== */
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+    .card-description {
+        font-weight: var(--medium-font-weight);
+        line-height: calc(24 / 16);
+        letter-spacing: var(--primary-letter-spacing);
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+
+    .card-description {
+        font-weight: var(--medium-font-weight);
+        line-height: calc(24 / 16);
+        letter-spacing: var(--primary-letter-spacing);
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1158px) {
+
+    .card-description {
+        line-height: 1.5;
+        letter-spacing: var(--primary-letter-spacing);
+        color: var(--text-description-color);
+    }
+}
+
+.studio-card-description {
+    margin-bottom: 8px;
+
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: var(--primary-letter-spacing);
+    color: var(--text-description-color);
+}
+/* ================== /DESCRIPTION ================== */

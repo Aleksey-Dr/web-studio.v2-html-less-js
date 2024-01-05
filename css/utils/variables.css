@@ -1,0 +1,32 @@
+/* ================== VARIABLES ================== */
+:root {
+    /* COLORS */
+    --primary-brand-color: #4D5AE5;
+    --pressed-state-color: #404BBF;
+    --primary-blue-color: #2E2F42;
+    --text-description-color: #434455;
+    --white-background-color: #ffffff;
+    --modal-background-color: #fcfcfc;
+    --secondary-white-color: #E7E9FC;
+    --text-light-color: #F4F4FD;
+    --icon-gray-color: #8E8F99;
+    --success-messages-color: #31D0AA;
+
+    /* FONT-FAMILY */           
+    --primary-font-family: 'Roboto', sans-serif;
+    --logo-font-family: 'Raleway', sans-serif;
+
+    /* FONT-SIZE */
+    --title-card-font-size: 20px;
+    --form-label-font-size: 12px;
+
+    /* FONT-WEIGHT */
+    --medium-font-weight: 500;
+
+    /* LETTER-SPACING */
+    --primary-letter-spacing: 0.02em;
+
+    /* TIMING */
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* ================== /VARIABLES ================== */

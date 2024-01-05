@@ -1,0 +1,25 @@
+/* Utils */
+@import './utils/variables.css';
+
+/* Base */
+@import './base/common.css';
+@import './base/container.css';
+@import './base/section.css';
+
+/* Component */
+@import './components/social-links.css';
+@import './components/buttons.css';
+@import './components/logotype.css';
+@import './components/title.css';
+@import './components/description.css';
+
+/* Layout */
+@import './layout/header.css';
+@import './layout/mobile-menu.css';
+@import './layout/modal-window.css';
+@import './layout/studio-hero.css';
+@import './layout/studio-team.css';
+@import './layout/studio-about-us.css';
+@import './layout/studio-we-doing.css';
+@import './layout/studio-clients.css';
+@import './layout/footer.css';

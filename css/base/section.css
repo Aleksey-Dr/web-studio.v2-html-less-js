@@ -1,0 +1,27 @@
+/* ================== SECTION ================== */
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+    .section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1158px) {
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+/* ================== /SECTION ================== */

@@ -1,0 +1,43 @@
+/* ================== LOGOTYPE ================== */
+.logo {
+    font-family: var(--logo-font-family);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-brand-color);
+}
+
+.logo-dark {
+    color: var(--primary-blue-color);
+}
+
+.logo-light {
+    color: var(--text-light-color);
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+    .logo {
+        margin: 0;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+
+    .logo {
+        margin-right: 120px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1158px) {
+    
+    .logo {
+        margin-right: 76px;
+    }
+}
+/* ================== /LOGOTYPE ================== */

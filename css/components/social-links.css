@@ -1,0 +1,87 @@
+/* ================== SOCIAL-LINKS ================== */
+/* Mobile-min */
+@media screen and (max-width: 427px) {
+
+    .studio-socials-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .mobile-menu-content .studio-socials-list {
+        display: flex;
+        gap: 24px;
+
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media screen and (min-width: 428px) and (max-width: 767px) {
+    
+    .studio-socials-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .mobile-menu-content .studio-socials-list {
+        display: flex;
+        gap: 56px;
+
+        justify-content: center;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    
+    .studio-socials-list {
+        display: flex;
+        gap: 24px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1158px) {
+    .studio-socials-list {
+        display: flex;
+        gap: 24px;
+    }
+}
+
+.social-item {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+.social-item .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    background-color: var(--primary-brand-color);
+
+    transition: background-color 250ms var(--timing-function);
+}
+
+.social-item .link:hover,
+.social-item .link:focus {
+    background-color: var(--pressed-state-color);
+
+    transition: background-color 250ms var(--timing-function);
+}
+
+/* Studio-team */
+.studio-social-icon {
+    flex-shrink: 0;
+
+    fill: var(--text-light-color);
+}
+/* ================== /SOCIAL-LINKS ================== */
