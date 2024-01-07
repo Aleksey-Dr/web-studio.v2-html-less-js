@@ -1,0 +1,120 @@
+// out: false
+
+/* ================== CLIENTS ================== */
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+    .studio-clients {
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 72px 16px;
+        }
+
+        &-item {
+            width: calc((100% - 16px) / 2);
+            height: 88px;
+        }
+
+        &-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        
+            border-radius: 4px;
+            border: 1px solid @icon-gray-color;
+        
+            color: @icon-gray-color;
+        
+            transition: color 250ms @timing-function,
+                border-color 250ms @timing-function;
+        }
+
+        &-icon {
+            fill: currentColor;
+        }
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+
+    .studio-clients {
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 72px 24px;
+        }
+
+        &-item {
+            width: 168px;
+            height: 88px;
+        }
+
+        &-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        
+            border-radius: 4px;
+            border: 1px solid @icon-gray-color;
+        
+            color: @icon-gray-color;
+        
+            transition: color 250ms @timing-function,
+                border-color 250ms @timing-function;
+        }
+
+        &-icon {
+            fill: currentColor;
+        }
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1158px) {
+
+    .studio-clients {
+        &-list {
+            display: flex;
+            gap: 24px;
+        }
+
+        &-item {
+            width: calc((100% - 120px) / 6);
+            height: 88px;
+        }
+
+        &-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        
+            border-radius: 4px;
+            border: 1px solid @icon-gray-color;
+        
+            color: @icon-gray-color;
+        
+            transition: color 250ms @timing-function,
+                border-color 250ms @timing-function;
+
+            &:hover,
+            &:focus {
+                border-color: @pressed-state-color;
+                color: @pressed-state-color;
+            }
+        }
+
+        &-icon {
+            fill: currentColor;
+        }
+    }
+}
+/* ================== /CLIENTS ================== */

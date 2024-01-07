@@ -1,20 +1,22 @@
+// out: false
+
 /* ================== LOGOTYPE ================== */
 .logo {
-    font-family: var(--logo-font-family);
+    font-family: @logo-font-family;
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-brand-color);
-}
+    color: @primary-brand-color;
 
-.logo-dark {
-    color: var(--primary-blue-color);
-}
+    &-dark {
+            color: @primary-blue-color;
+        }
 
-.logo-light {
-    color: var(--text-light-color);
+    &-light {
+        color: @text-light-color;
+    }
 }
 
 /* Mobile */
@@ -35,7 +37,7 @@
 
 /* Desktop */
 @media screen and (min-width: 1158px) {
-    
+
     .logo {
         margin-right: 76px;
     }

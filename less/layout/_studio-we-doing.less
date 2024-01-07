@@ -1,3 +1,5 @@
+// out: false
+
 /* ================== STUDIO DOING ================== */
 /* Mobile */
 @media screen and (max-width: 767px) {
@@ -20,15 +22,15 @@
 
     .studio-doing {
         padding-bottom: 120px;
-    }
 
-    .studio-doing-list {
-        display: flex;
-        gap: 24px;
-    }
+        &-list {
+            display: flex;
+            gap: 24px;
+        }
 
-    .studio-doing-item {
-        border: 1px solid var(--secondary-white-color);
+        &-item {
+            border: 1px solid @secondary-white-color;
+        }
     }
 }
 /* ================== /STUDIO DOING ================== */

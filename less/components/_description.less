@@ -1,11 +1,13 @@
+// out: false
+
 /* ================== DESCRIPTION ================== */
 /* Mobile */
 @media screen and (max-width: 767px) {
 
     .card-description {
-        font-weight: var(--medium-font-weight);
+        font-weight: @medium-font-weight;
         line-height: calc(24 / 16);
-        letter-spacing: var(--primary-letter-spacing);
+        letter-spacing: @primary-letter-spacing;
     }
 }
 
@@ -13,9 +15,9 @@
 @media screen and (min-width: 768px) and (max-width: 1157px) {
 
     .card-description {
-        font-weight: var(--medium-font-weight);
+        font-weight: @medium-font-weight;
         line-height: calc(24 / 16);
-        letter-spacing: var(--primary-letter-spacing);
+        letter-spacing: @primary-letter-spacing;
     }
 }
 
@@ -24,8 +26,8 @@
 
     .card-description {
         line-height: 1.5;
-        letter-spacing: var(--primary-letter-spacing);
-        color: var(--text-description-color);
+        letter-spacing: @primary-letter-spacing;
+        color: @text-description-color;
     }
 }
 
@@ -34,7 +36,8 @@
 
     text-align: center;
     line-height: 1.5;
-    letter-spacing: var(--primary-letter-spacing);
-    color: var(--text-description-color);
+    letter-spacing: @primary-letter-spacing;
+    color: @text-description-color;
 }
+
 /* ================== /DESCRIPTION ================== */
